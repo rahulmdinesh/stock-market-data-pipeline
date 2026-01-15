@@ -1,0 +1,29 @@
+name: "stock_market_analytics"  
+version: "1.0.0"
+config-version: 2
+
+profile: "stock_market_analytics"  
+
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "stocks/target"  
+clean-targets:
+  - "target"
+  - "packages"
+
+models:
+  stock_market_analytics:
+    bronze:
+      +schema: bronze
+      +materialized: view
+    silver:
+      +schema: silver
+      +materialized: table
+    gold:
+      +schema: gold
+      +materialized: table
