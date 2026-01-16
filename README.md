@@ -15,6 +15,7 @@ Modern **medallion architecture** (Bronze → Silver → Gold) with:
 - **dbt** for Data Warehouse transformations
 - **Slack** alerts on successful loads, heartbeats & failures
 - Heartbeats and logging for monitoring
+- **Tableau** for visualization and analytics
 
 ## Features
 
@@ -45,6 +46,7 @@ Modern **medallion architecture** (Bronze → Silver → Gold) with:
 - Snowflake (data warehouse)
 - dbt (transformations)
 - Docker + docker-compose
+- Tableau (visualization and analytics)
 
 
 ## Getting Started
@@ -177,5 +179,22 @@ open http://localhost:9003/
 
 12. Once all 3 DAGs have run successfully, run SQL queries om Snowflake to view the data.
 
+## Screenshots
+Airflow Web UI for triggering and monitoring DAGs
+<img width="1728" height="876" alt="image" src="https://github.com/user-attachments/assets/951f7ed8-5fb8-4967-a447-ba567c1854fe" />
 
+MinIO Web UI
+<img width="1728" height="876" alt="image" src="https://github.com/user-attachments/assets/e47b9eff-42d5-4796-bdbc-db2ffcb2b5f6" />
+
+Kafdrop Web UI for Kafka Cluster and Topic metrics
+<img width="1728" height="876" alt="image" src="https://github.com/user-attachments/assets/2772ee54-e4d2-4e10-936e-d54f633f5182" />
+
+Slack integration for alerting and monitoring
+<img width="1728" height="991" alt="image" src="https://github.com/user-attachments/assets/39202956-fbea-407b-b9c0-3b0c3492cdfe" />
+
+Snowflake UI with schemas generated via DBT (Bronze, Silver, Gold)
+<img width="1728" height="872" alt="image" src="https://github.com/user-attachments/assets/fed9001f-9eff-4004-a58a-954fcc08bbec" />
+
+Tableau Dashboard showing KPI Cards for each stock
+<img width="1280" height="673" alt="image" src="https://github.com/user-attachments/assets/a7854f43-1639-49a9-8c29-73a1fa783464" />
 
