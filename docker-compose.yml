@@ -22,7 +22,8 @@ services:
       timeout: 10s
       retries: 4
     volumes:
-      - kafka_data:/var/lib/kafka/data
+      - ./kafka/data:/var/lib/kafka/data
+      - ./kafka/metadata:/var/lib/kafka/metadata
     networks:
       - stock_network
 
@@ -288,6 +289,7 @@ volumes:
   postgres_data:
   minio_data:
   kafka_data:
+  kafka_metadata:
 
 networks:
   stock_network:
